@@ -2,8 +2,9 @@
 
 [Select2](https://github.com/ivaynberg/select2) is a jQuery based replacement for select boxes. It supports searching, remote data sets, and infinite scrolling of results.
 
-
 The `select2-rails` gem integrates the `Select2` jQuery plugin with the Rails asset pipeline.
+
+[![Gem Version](https://badge.fury.io/rb/select2-rails.png)](http://badge.fury.io/rb/select2-rails)
 
 ## Usage
 
@@ -25,8 +26,25 @@ Add to your `app/assets/stylesheets/application.css`:
 
 	*= require select2
 
+## Internationalization (i18n)
+
+The `select2-rails` now supports multiple languages.
+
+Add the following to your `app/assets/javascripts/application.js`:
+
+	//= require select2_locale_"any possible language"
+
+Possible languages:
+
+	ar, ca, cs, da, de, el, es, et, eu, fi, fr, gl, he, hr, hu, id, is, it, ja, ko, lt, lv, mk, ms, nl, no, pl, pt-BR, pt-PT, ro, ru, sk, sv, tr, ua, vi, zh-CN, zh-TW
+
+## Example
+Code [here](https://github.com/argerim/select_2_example)
+
+Heroku app [here](http://select-2-example.herokuapp.com/)
+
 ## Version
-From `v2.1.0` on, `select2-rails`'s version will match the version of `Select2` it uses. Currently, `select2-rails` uses `Select2 v3.2`.
+From `v2.1.0` on, `select2-rails`'s version will match the version of `Select2` it uses.
 
 The last number of the version is the patch version specific to the gem. For example, for a version of the form `2.x.y`, `2.x` is the release of `Select2` we should be compatible with, and y is the patch version specific to the gem (ie. to resolve any gem-specific issues that crop up).
 
@@ -38,6 +56,6 @@ If you want to contribute, please:
 	* Make your feature addition or bug fix.
 	* Send me a pull request on Github.
 
-## Copyright
+## License
 
-Copyright (c) 2012 Rogerio Medeiros. See [LICENSE](https://github.com/argerim/select2-rails/blob/master/LICENSE) for details.
+Selec2-Rails is released under the [MIT License](http://www.opensource.org/licenses/MIT).
